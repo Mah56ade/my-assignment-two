@@ -1,0 +1,25 @@
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* shared style */
+.clr-common {
+    color: #FFFFFF;
+}
+
+.clr-linear {
+    background: linear-gradient(45deg, #f1fc00 0%, #fc00ff 50%, #7d00ff 100%);
+}
+
+
+/* main style */
+
+
+
+/* media query */
+/* small screen */
+@media screen and (max-width:576px) {}
+
+/* large screen */
+@media screen and (min-width:992px) and (max-width:1600px) {}
