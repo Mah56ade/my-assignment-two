@@ -32,7 +32,6 @@
 }
 
 
-
 .flex {
     display: flex;
 }
@@ -377,7 +376,113 @@ nav button:active {
 }
 
 
+/* video section */
+.video {
+    padding: 120px 200px 120px 200px;
+    background-color: #1A0B2E;
+    gap: 120px;
+    width: 100%;
+    height: auto;
+}
 
+.video .features h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.features .ca-rds {
+
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 10px;
+}
+
+.ca-rds .ca-rd {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #250D44;
+    margin: 0 auto;
+    gap: 12px;
+    padding: 24px;
+}
+
+.ca-rd h6 {
+    font-size: 1.10rem;
+}
+
+.ca-rd img {
+    width: 16px;
+    height: 16px;
+
+}
+
+.host {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.host h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.host-details {
+    background-color: #351165;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px;
+    color: #FFFFFF;
+
+}
+
+.host-details .social h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #533c72;
+    background: transparent;
+    transition: all 0.3s ease
+}
+
+.icons .icon image {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.icons .icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
 
 /* media query */
 /* small screen */
@@ -527,6 +632,40 @@ nav button:active {
     .why .cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .video {
+        padding: 40px 20px 40px 20px;
+        background-color: #1A0B2E;
+        gap: 60px;
+        width: 100%;
+        height: auto;
+    }
+
+    .features .ca-rds {
+
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ca-rds iframe {
+        max-width: 400px;
+        max-height: 225px;
+        width: 100%;
+    }
+
+    .host {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .host-details {
+        flex-direction: column;
     }
 }
 
