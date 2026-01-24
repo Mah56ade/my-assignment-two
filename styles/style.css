@@ -286,6 +286,99 @@ nav button:active {
     transform: scale(0.95);
 }
 
+/* headline-cards */
+.headline-cards {
+    width: 100%;
+    height: auto;
+    padding: 50px 200px 120px 200px;
+}
+
+.head-lines {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    /* align-items: center; */
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    /* border: 2px solid #00FF88; */
+}
+
+.head-lines h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.head-lines p {
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+
+.mgb {
+    margin-bottom: 80px;
+}
+
+.cards {
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+    gap: 80px;
+    align-items: center;
+}
+
+.cards h2 {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
+}
+
+.cards p {
+    line-height: 20px;
+    text-align: center;
+}
+
+/* why choose Techwave */
+
+.why {
+    width: 100%;
+    background-color: #230E3D;
+    padding: 120px 200px 120px 200px;
+    gap: 40px;
+
+}
+
+.why h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.why .cards {
+    width: 100%;
+    margin: 0px;
+}
+
+
+.why .cards .card {
+    background-color: #351165;
+    padding: 40px 40px 40px 40px;
+    border-radius: 40px;
+}
+
+.why .cards .card p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+
+
 /* media query */
 /* small screen */
 @media screen and (max-width:576px) {
@@ -407,7 +500,34 @@ nav button:active {
         gap: 8px
     }
 
+    /* cards and headlines */
+    .headline-cards {
+        max-width: 440px;
+        padding: 40px 20px 40px 20px;
+        width: 100%;
+        height: auto;
+    }
 
+    .headline-cards .cards {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .why {
+        width: 100%;
+        background-color: #230E3D;
+        padding: 40px 20px 40px 20px;
+        gap: 16px;
+
+    }
+
+    .why .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -417,5 +537,22 @@ nav button:active {
 @media screen and (min-width:992px) and (max-width:1600px) {
     .hbg {
         display: none;
+    }
+
+    .why .cards {
+        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .card-big {
+        grid-row: span 2;
+
+    }
+
+    .card-wide {
+
+        grid-column: span 2;
     }
 }
